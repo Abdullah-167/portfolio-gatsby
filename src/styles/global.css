@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.hero-bg {
+    background: linear-gradient(0deg, rgb(134, 195, 213) 0%, rgba(24, 21, 76, 0.26) 100%), url('../images/hero.svg'), lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    mix-blend-mode: soft-light;
+}
+
+
+.hero-text {
+    text-shadow: 2px 2px 24px #18154C;
+}
+
+.services-bg {
+    background-image: url('../images/sec2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+}
+
+
+.port-bg {
+    background: linear-gradient(180deg, #b4d9e4 80%, #d4b2d6 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
+}
+
+
+.form-bg {
+    background: linear-gradient(180deg, #18154C 47.4%, #55C8EB 100%);
+}
+
+.nav-bg {
+    background: linear-gradient(180deg, #18154C 0%, #3D8095 100%);
+}
+
+
+@media only screen and (max-width: 1080px) {
+
+    .services-bg {
+        clip-path: none;
+        background-image: none;
+    }
+
+    .port-bg {
+        background: none;
+        clip-path: none;
+    }
+
+    .hero-bg {
+        height: auto;
+    }
+}
+
+
+.modal-open {
+    overflow: hidden;
+}
