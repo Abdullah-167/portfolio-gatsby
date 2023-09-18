@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <div className='port-bg'>
+      <div className=''>
         <Services />
         <PortfoliTab />
       </div>

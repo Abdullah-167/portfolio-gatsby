@@ -39,7 +39,7 @@ body {
 }
 
 .services-bg {
-    background-image: url('../images/sec2.svg');
+    background-image: url('../images/section2.png');
     background-repeat: no-repeat;
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
@@ -47,8 +47,12 @@ body {
 
 
 .port-bg {
-    background: linear-gradient(180deg, #b4d9e4 80%, #d4b2d6 100%);
+    background-image: url('../images/section3.png');
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
+    background-repeat: no-repeat;
+    height: auto;
+    margin-top: -160px;
+    overflow: hidden;
 }
 
 
@@ -81,4 +85,25 @@ body {
 
 .modal-open {
     overflow: hidden;
+}
+
+
+.card-show>div {
+    display: none;
+}
+
+.card-show:hover>div {
+    display: block;
+}
+
+.image-show:hover>span {
+    display: none;
+}
+
+.image-show>span {
+    display: block;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 1px;
 }
