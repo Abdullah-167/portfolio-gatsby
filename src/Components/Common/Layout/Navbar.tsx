@@ -1,9 +1,10 @@
-import { GatsbyImage, MainImage } from 'gatsby-plugin-image'
+import { GatsbyImage, MainImage, StaticImage } from 'gatsby-plugin-image'
 import React, { useEffect, useState } from 'react';
 import { RxCross1 } from 'react-icons/rx';
 import { CgMenuLeft } from 'react-icons/cg';
 import { useLocation } from '@reach/router';
 import { Link } from 'gatsby';
+
 
 const Navbar = () => {
     const [toggelTab, setToggelTab] = useState<boolean>(false);
@@ -28,7 +29,9 @@ const Navbar = () => {
         <nav className={`py-10 sm:py-6  ${isHomePage ? ' bg-transparent' : ' nav-bg'}`}>
             <div className='flex justify-between items-center container'>
                 <div>
-                    <Link to='/'><MainImage className='sm:w-[150px] w-[100px]' src="/logo.svg" alt="Logo" width={150} height={70} /> </Link>
+                    <Link to='/'>
+                    <StaticImage src={'../../../images/logo.svg'} className="min-h-[]" alt="Logo" width={143} height={63} /> 
+                    </Link>
                 </div>
                 <div className='hidden md:flex gap-8 items-center'>
                     {links.map((item, index) => {

@@ -51,6 +51,7 @@ body {
     background-repeat: no-repeat;
     height: auto;
     margin-top: -160px;
+    background-position: center;
     overflow: hidden;
 }
 

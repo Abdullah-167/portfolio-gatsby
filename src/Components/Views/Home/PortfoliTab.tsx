@@ -53,7 +53,7 @@ const PortfoliTab = () => {
                                                     return (
                                                         <div className="" key={idx} >
                                                             <div className="card-show image-show max-w-[332px] cursor-pointer" onClick={() => handelModale(idx)}>
-                                                                <span>  <MainImage src={newitem.img} alt="Logo" width={350} height={70} />  </span>
+                                                                <span>  {newitem.img} </span>
                                                                 <div className=" bg-white text-center py-16 px-6 shadow-md min-h-[273px]">
                                                                     <h2 className="text-lg text-[#A25FA5] font-semibold pb-5">{newitem.headingText}</h2>
                                                                     <p className="text-base text-[#646467] font-normal">{newitem.Para}</p>
@@ -110,7 +110,9 @@ const DataA = [
         btnHeading: 'Consultoría y asesoría',
         data: [
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -137,7 +139,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -164,7 +168,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -191,7 +197,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -218,7 +226,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -245,7 +255,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -279,7 +291,9 @@ const DataA = [
         btnHeading: 'Desarrollo de software',
         data: [
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -306,7 +320,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -333,7 +349,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -360,7 +378,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -387,7 +407,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -414,7 +436,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -448,7 +472,9 @@ const DataA = [
         btnHeading: 'Cloud Computing',
         data: [
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -475,7 +501,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -502,7 +530,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -529,7 +559,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -556,7 +588,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -583,7 +617,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -617,7 +653,9 @@ const DataA = [
         btnHeading: 'Automatización de procesos',
         data: [
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -644,7 +682,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -671,7 +711,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -698,7 +740,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -725,7 +769,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -752,7 +798,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -786,7 +834,9 @@ const DataA = [
         btnHeading: 'Ciencia de datos',
         data: [
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -813,7 +863,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -840,7 +892,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -867,7 +921,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -894,7 +950,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -921,7 +979,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -955,7 +1015,9 @@ const DataA = [
         btnHeading: 'Servicios gestionados',
         data: [
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -982,7 +1044,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -1009,7 +1073,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -1036,7 +1102,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -1063,7 +1131,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
@@ -1090,7 +1160,9 @@ const DataA = [
                 ]
             },
             {
-                img: '/export.svg',
+                img:  (
+                    <StaticImage src={'../../../images/export.svg'} className="min-h-[]" alt="Logo" width={350} height={300} /> 
+                ),
                 link: '/agexport',
                 headingText: 'asdasddasd',
                 Para: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, impedit!`,
