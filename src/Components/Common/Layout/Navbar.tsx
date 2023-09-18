@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className='flex justify-between items-center container'>
                 <div>
                     <Link to='/'>
-                    <StaticImage src={'../../../images/logo.svg'} className="min-h-[]" alt="Logo" width={143} height={63} /> 
+                        <StaticImage src={'../../../images/logo.svg'} className="sm:w-[143px] w-[65px] sm:h-[63px] h-[29px]" alt="Logo" width={143} height={63} />
                     </Link>
                 </div>
                 <div className='hidden md:flex gap-8 items-center'>

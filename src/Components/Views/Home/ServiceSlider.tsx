@@ -19,8 +19,8 @@ export default function ServiceSlider() {
     })
 
     return (
-        <>
-            <div className="sm:hidden block services-bg navigation-wrapper pl-10 z-[100]  services-bg pt-20 pb-56 mb-[48px]">
+        <div className="sm:hidden block services-bg navigation-wrapper pl-10 z-[100]  services-bg pt-20 pb-56 mb-[48px]">
+            <div className=" relative">
                 <h2 className='text-[32px] font-bold  text-[#0E333F]'>Servicios</h2>
                 <div ref={sliderRef} className="keen-slider">
                     {data.map((item, index) => {
@@ -37,6 +37,23 @@ export default function ServiceSlider() {
                     })}
 
                 </div>
+                {loaded && instanceRef.current && (
+                    <div className="dots absolute top-[470px] left-24">
+                        {[
+                            ...Array(instanceRef.current.track.details.slides.length).keys(),
+                        ].map((idx) => {
+                            return (
+                                <button
+                                    key={idx}
+                                    onClick={() => {
+                                        instanceRef.current?.moveToIdx(idx)
+                                    }}
+                                    className={"dot" + (currentSlide === idx ? " active" : "")}
+                                ></button>
+                            )
+                        })}
+                    </div>
+                )}
             </div>
             {/* {loaded && instanceRef.current && (
                     <>
@@ -59,25 +76,9 @@ export default function ServiceSlider() {
                         />
                     </>
                 )} */}
-            {loaded && instanceRef.current && (
-                <div className="dots absolute top-[850px] left-32">
-                    {[
-                        ...Array(instanceRef.current.track.details.slides.length).keys(),
-                    ].map((idx) => {
-                        return (
-                            <button
-                                key={idx}
-                                onClick={() => {
-                                    instanceRef.current?.moveToIdx(idx)
-                                }}
-                                className={"dot" + (currentSlide === idx ? " active" : "")}
-                            ></button>
-                        )
-                    })}
-                </div>
-            )}
 
-        </>
+
+        </div>
 
     )
 }
