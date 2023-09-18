@@ -18,9 +18,9 @@ const PortfoliTab = () => {
     }
 
     return (
-        <div className={`port-bg z-[100]  pt-40 px-5  ${isHomePage ? 'pb-[160px] md:pb-[200px] ' : ' py-20'}`}>
+        <div className={`z-[100]  px-5  ${isHomePage ? ' py-28 sm:py-48 port-bg  ' : ' py-20'}`}>
             <div className="max-w-6xl mx-auto relative ">
-                <h2 className={`text-[32px]  font-bold pb-5 ${isHomePage ? 'text-[#3D8095]' : 'text-[#4E4B8B]'}`}>Portafolio</h2>
+                <h2 className={`text-[18px] sm:text-[32px]  font-bold pb-5 ${isHomePage ? 'text-[#3D8095]' : 'text-[#4E4B8B]'}`}>Portafolio</h2>
                 <div className="">
                     <div className="flex gap-4  justify-between  max-w-[800px] mx-auto lg:max-w-full overflow-x-scroll lg:overflow-auto pb-7 ">
                         {DataA.map((item, index) => {
@@ -52,7 +52,8 @@ const PortfoliTab = () => {
                                                 {item.data.map((newitem, idx) => {
                                                     return (
                                                         <div className="" key={idx} >
-                                                            <div className="card-show image-show max-w-[332px] cursor-pointer" onClick={() => handelModale(idx)}>                                                                <span>  <MainImage src={newitem.img} alt="Logo" width={350} height={70} />  </span>
+                                                            <div className="card-show image-show max-w-[332px] cursor-pointer" onClick={() => handelModale(idx)}>
+                                                                <span>  <MainImage src={newitem.img} alt="Logo" width={350} height={70} />  </span>
                                                                 <div className=" bg-white text-center py-16 px-6 shadow-md min-h-[273px]">
                                                                     <h2 className="text-lg text-[#A25FA5] font-semibold pb-5">{newitem.headingText}</h2>
                                                                     <p className="text-base text-[#646467] font-normal">{newitem.Para}</p>

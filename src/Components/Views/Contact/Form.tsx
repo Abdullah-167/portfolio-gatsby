@@ -11,7 +11,7 @@ const Form = () => {
                             <span className='w-full'>{item.input}</span>
                         )
                     })}
-                    <div className='bg-[#A25FA5] text-white text-center py-3 rounded cursor-pointer'>Enviar</div>
+                    <div className='btn bg-[#A25FA5] font-semibold text-white text-center py-2 rounded cursor-pointer'>Enviar</div>
                 </div>
             </div>
         </section>

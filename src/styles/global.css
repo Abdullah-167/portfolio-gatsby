@@ -42,7 +42,6 @@ body {
     background-image: url('../images/section2.png');
     background-repeat: no-repeat;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
 }
 
 
@@ -64,21 +63,34 @@ body {
     background: linear-gradient(180deg, #18154C 0%, #3D8095 100%);
 }
 
+.btn:hover {
+    color: #A25FA5;
+    background-color: #F5E6F5;
+}
+
+.btn:active {
+    background-color: #CEA8CF;
+    color: #A25FA5;
+}
+
 
 @media only screen and (max-width: 1080px) {
 
     .services-bg {
-        clip-path: none;
-        background-image: none;
+        clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
     }
 
     .port-bg {
-        background: none;
-        clip-path: none;
+        clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
+
     }
 
     .hero-bg {
         height: auto;
+    }
+
+    .form-bg {
+        clip-path: none;
     }
 }
 
@@ -104,6 +116,87 @@ body {
     display: block;
 }
 
+
+.card-show2>div {
+    display: block;
+    animation-delay: .2s;
+}
+
+.card-show2:hover>div {
+    display: none;
+    animation-delay: .2s;
+}
+
+.image-show2:hover>span {
+    display: block;
+    animation-delay: .2s;
+}
+
+.image-show2>span {
+    display: none;
+    animation-delay: .2s;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
     width: 1px;
+}
+
+
+.blog-card:hover {
+    background-color: #F3F2FA;
+}
+
+
+
+.navigation-wrapper {
+    position: relative;
+}
+
+.dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 1px solid #C5EEFB;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dot:focus {
+    outline: none;
+}
+
+.dot.active {
+    background: #C5EEFB;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
+}
+
+.arrow--left {
+    left: 5px;
+}
+
+.arrow--right {
+    left: auto;
+    right: 5px;
+}
+
+.arrow--disabled {
+    fill: rgba(255, 255, 255, 0.5);
 }

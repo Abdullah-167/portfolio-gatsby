@@ -15,7 +15,7 @@ const Form = () => {
                             <span className='w-full'>{item.input}</span>
                         )
                     })}
-                    <div className='bg-[#A25FA5] text-white text-center py-2 rounded cursor-pointer'>Enviar</div>
+                    <div className='btn bg-[#A25FA5] font-semibold text-white text-center py-2 rounded cursor-pointer'>Enviar</div>
                 </div>
             </div>
         </section>
@@ -28,19 +28,19 @@ export default Form;
 const formsData = [
     {
         input: (
-            <input type={'text'} placeholder={'Nombre'} className={`w-full bg-[#C5EEFB] rounded outline-none px-3 py-3 mb-5 flex-grow`} />
+            <input type={'text'} placeholder={'Nombre'} className={`w-full bg-[#C5EEFB] focus:bg-white rounded outline-none px-3 py-3 mb-5 flex-grow`} />
 
         )
     },
     {
         input: (
-            <input type={'text'} placeholder={'Correo electrónico'} className={`w-full bg-[#C5EEFB] rounded outline-none px-3 py-3 mb-5 flex-grow`} />
+            <input type={'text'} placeholder={'Correo electrónico'} className={`w-full bg-[#C5EEFB] focus:bg-white rounded outline-none px-3 py-3 mb-5 flex-grow`} />
 
         )
     },
     {
         input: (
-            <textarea placeholder={'Mensaje'} className={`w-full bg-[#C5EEFB] rounded outline-none px-3 py-3 mb-5 flex-grow h-32`} />
+            <textarea placeholder={'Mensaje'} className={`w-full bg-[#C5EEFB] focus:bg-white rounded outline-none px-3 py-3 mb-5 flex-grow h-32`} />
 
         )
     },

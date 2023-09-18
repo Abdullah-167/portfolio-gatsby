@@ -8,16 +8,16 @@ const Details = () => {
                 <h2 className='text-[#4E4B8B] text-[32px] font-bold container'>Blog </h2>
                 <p className=' text-sm text-[#18154C] font-semibold text-center pb-5'>CLOUD COMPUTING</p>
                 <h1 className='text-[32px] font-semibold text-[#3D8095] text-center max-w-[599px] mx-auto leading-9 pb-8'>Beneficios de implementar Cloud Computing en tu empresa</h1>
-                <div className='flex justify-between max-w-[599px] mx-auto text-sm text-[#242425] font-normal pb-20'>
+                <div className='flex justify-between max-w-[599px] mx-auto text-sm text-[#242425] font-normal pb-12 sm:pb-20 px-5'>
                     <span>Nombre Apellido</span>
                     <p>04 de junio 2023</p>
                 </div>
                 <StaticImage src={'../../../images/laptop.png'} alt={''} />
 
-                <div className='pb-16'>
+                <div className='pb-0 sm:b-16'>
                     {blog.map((item, index) => {
                         return (
-                            <div className='max-w-[599px] mx-auto'
+                            <div className='max-w-[599px] mx-auto px-5'
                                 key={index}>
                                 <h2 className=' font-bold text-center text-base py-14'>{item.mainHeading}</h2>
                                 {item.innerData.map((newItem, idx) => {
@@ -38,7 +38,7 @@ const Details = () => {
                         {data.map((newitem, idx) => {
                             return (
                                 <div key={idx} className="flex md:flex-nowrap flex-wrap gap-5 bg-white shadow-md p-4">
-                                    <MainImage src={newitem.img} alt="Logo" className="lg:max-w-[200px] min-w-[200px] w-full object-cover lg:min-h-[250px] lg:max-h-[200px]" width={400} height={400} />
+                                    <div className='px-2'>{newitem.img}</div>
                                     <div>
                                         <h2 className="text-[#3D8095] text-[20px] leading-6 font-semibold pb-3">{newitem.heading}</h2>
                                         <p className="text-sm pb-3">{newitem.para}</p>
@@ -80,14 +80,18 @@ const blog = [
 
 const data = [
     {
-        img: '../../../images/laptop.png',
+        img: (
+            <StaticImage src={'../../../images/laptop.png'} alt="Logo" className="lg:max-w-[200px] min-w-[200px] w-full object-cover lg:min-h-[250px] lg:max-h-[200px]" width={400} height={400} />
+        ),
         heading: 'Beneficios de implementar Cloud Computing en tu empresa',
         para: 'Lorem ipsum dolor sit amet consectetur. Nisl nunc quis augue aliquam at felis rutrum. Urna at tortor volutpat sit risus tortor. Risus diam sit tellus tristique elit urna nisl. Aliquam sed volutpat dictum nec.',
         date: '04 de junio 2023',
         btn: 'Leer'
     },
     {
-        img: '../../../images/laptop.png',
+        img: (
+            <StaticImage src={'../../../images/laptop.png'} alt="Logo" className="lg:max-w-[200px] min-w-[200px] w-full object-cover lg:min-h-[250px] lg:max-h-[200px]" width={400} height={400} />
+        ),
         heading: 'Beneficios de implementar Cloud Computing en tu empresa',
         para: 'Lorem ipsum dolor sit amet consectetur. Nisl nunc quis augue aliquam at felis rutrum. Urna at tortor volutpat sit risus tortor. Risus diam sit tellus tristique elit urna nisl. Aliquam sed volutpat dictum nec.',
         date: '04 de junio 2023',

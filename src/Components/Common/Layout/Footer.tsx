@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className='bg-[#18154C] text-white  py-7'>
-            <div className='flex justify-between container items-center'>
+            <div className='flex sm:flex-row flex-col-reverse justify-between container items-center'>
                 <span className='text-sm'>Guatemala, 2023</span>
-                <div className='flex gap-5'>
+                <div className='flex gap-5 sm:pb-0 pb-6'>
                     {data.map((item, index) => {
                         return (
                             <div key={index} className='cursor-pointer'>{item.icon}</div>

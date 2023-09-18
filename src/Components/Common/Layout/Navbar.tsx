@@ -25,10 +25,10 @@ const Navbar = () => {
     const isHomePage = location.pathname === '/';
 
     return (
-        <nav className={`py-6  ${isHomePage ? ' bg-transparent' : ' nav-bg'}`}>
+        <nav className={`py-10 sm:py-6  ${isHomePage ? ' bg-transparent' : ' nav-bg'}`}>
             <div className='flex justify-between items-center container'>
                 <div>
-                    <Link to='/'><MainImage src="/logo.svg" alt="Logo" width={150} height={70} /> </Link>
+                    <Link to='/'><MainImage className='sm:w-[150px] w-[100px]' src="/logo.svg" alt="Logo" width={150} height={70} /> </Link>
                 </div>
                 <div className='hidden md:flex gap-8 items-center'>
                     {links.map((item, index) => {
@@ -47,18 +47,20 @@ const Navbar = () => {
                     {toggelTab ? (
                         <RxCross1 />
                     ) : (
-                        <CgMenuLeft />
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.33333 23H25.6667C26.4 23 27 22.4 27 21.6667C27 20.9333 26.4 20.3333 25.6667 20.3333H4.33333C3.6 20.3333 3 20.9333 3 21.6667C3 22.4 3.6 23 4.33333 23ZM4.33333 16.3333H25.6667C26.4 16.3333 27 15.7333 27 15C27 14.2667 26.4 13.6667 25.6667 13.6667H4.33333C3.6 13.6667 3 14.2667 3 15C3 15.7333 3.6 16.3333 4.33333 16.3333ZM3 8.33333C3 9.06667 3.6 9.66667 4.33333 9.66667H25.6667C26.4 9.66667 27 9.06667 27 8.33333C27 7.6 26.4 7 25.6667 7H4.33333C3.6 7 3 7.6 3 8.33333Z" fill="white" />
+                        </svg>
                     )}
                 </div>
             </div>
-            <div className={`w-full absolute top-28 py-5 transition-all duration-700 shadow-md bg-white z-[1100]  max-w-[300px] min-h-[300px] ${toggelTab ? ' -right-0 opacity-100 ' : ' opacity-0 -right-[800px]'}`}>
+            <div className={`w-full absolute h-full top-28 py-5 transition-all duration-700 shadow-md bg-[#18154C] z-[1000]  max-w-[300px] min-h-[300px] ${toggelTab ? ' -right-0 opacity-100 ' : ' opacity-0 -right-[800px]'}`}>
                 {toggelTab && (
                     <div className='flex flex-col gap-8 items-center'>
                         {links.map((item, index) => {
                             return (
                                 <Link to={item.url}><span
                                     key={index}
-                                    className={`text-sm cursor-pointer text-black`}
+                                    className={`text-sm cursor-pointer text-white`}
                                 >
                                     {item.link}
                                 </span>

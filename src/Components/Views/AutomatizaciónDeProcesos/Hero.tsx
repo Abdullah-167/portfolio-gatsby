@@ -6,7 +6,8 @@ const Hero = () => {
     return (
         <header className='py-10'>
             <div className=' container'>
-                <h2 className='text-[#4E4B8B] text-[32px] font-bold'>Servicios </h2>
+                <h2 className='text-[#4E4B8B] 
+text-[18px] sm:text-[32px] font-bold'>Servicios </h2>
                 {text.map((item, index) => {
                     return (
                         <div key={index} className='pb-7'>

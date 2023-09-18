@@ -6,12 +6,14 @@ const Hero = () => {
     return (
         <header className='py-10'>
             <div className=' container'>
-                <h2 className='text-[#4E4B8B] text-[32px] font-bold'>Servicios </h2>
+                <h2 className='text-[#4E4B8B] pb-6 
+text-[18px] sm:text-[32px] font-bold'>Servicios </h2>
                 {text.map((item, index) => {
                     return (
                         <div key={index} className='pb-7'>
-                            <h1 className='text-[32px] text-[#3D8095] font-bold  text-center'>{item.heading}</h1>
-                            <p className='text-[22px] text-[#646467] font-medium text-center pb-7'>{item.description}</p>
+                            <h1 className='text-[20px] sm:text-[32px] text-[#3D8095] font-bold  text-center'>{item.heading}</h1>
+                            <p className='text-[20px]    
+ sm:text-[22px] text-[#646467] font-medium text-center pb-7'>{item.description}</p>
                             {item.innerData.map((newItem, idx) => {
                                 return (
                                     <div className='max-w-[618px] mx-auto'
