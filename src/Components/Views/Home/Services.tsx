@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 
 const Services = () => {
-
+    const location = useLocation();
     const isHomePage = location.pathname === '/';
 
     return (
@@ -17,7 +17,7 @@ const Services = () => {
                     {data.map((item, index) => {
                         return (
                             <Link to={item.link}>
-                                <div className='card-show image-show'>
+                                <div className='card-show image-show pointer-events-none'>
                                     <div className={`bg-white py-28 px-6 relative min-h-[404px] max-h-[404px] max-w-[375px] rounded ${isHomePage ? 'shadow-md lg:shadow-none' : ' shadow-md'}`}
                                         key={index}
                                     >
