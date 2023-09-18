@@ -1,203 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
-
-.hero-bg {
-    background: linear-gradient(0deg, rgb(134, 195, 213) 0%, rgba(24, 21, 76, 0.26) 100%), url('../images/hero.svg'), lightgray;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-    mix-blend-mode: soft-light;
+.hero_bg {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
-
 
 .hero-text {
-    text-shadow: 2px 2px 24px #18154C;
+  text-shadow: 2px 2px 24px #18154c;
 }
 
-.services-bg {
-    background-image: url('../images/section2.png');
-    background-repeat: no-repeat;
-    background-position: center;
+.custom_gradient {
+  background: rgb(207, 234, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(207, 234, 246, 1) 0%,
+    rgba(224, 211, 231, 1) 100%
+  );
 }
-
-
-.port-bg {
-    background-image: url('../images/section3.png');
-    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
-    background-repeat: no-repeat;
-    height: auto;
-    margin-top: -160px;
-    background-position: center;
-    overflow: hidden;
-}
-
 
 .form-bg {
-    background: linear-gradient(180deg, #18154C 47.4%, #55C8EB 100%);
+  background: linear-gradient(180deg, #18154c 47.4%, #55c8eb 100%);
 }
 
 .nav-bg {
-    background: linear-gradient(180deg, #18154C 0%, #3D8095 100%);
+  background: linear-gradient(180deg, #18154c 0%, #3d8095 100%);
 }
 
 .btn:hover {
-    color: #A25FA5;
-    background-color: #F5E6F5;
+  color: #a25fa5;
+  background-color: #f5e6f5;
 }
 
 .btn:active {
-    background-color: #CEA8CF;
-    color: #A25FA5;
+  background-color: #cea8cf;
+  color: #a25fa5;
 }
-
 
 @media only screen and (max-width: 1080px) {
+  .services-bg {
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
+  }
 
-    .services-bg {
-        clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
-    }
+  .port-bg {
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
+  }
 
-    .port-bg {
-        clip-path: polygon(0 0, 100% 0, 100% 93%, 0 84%);
+  .hero-bg {
+    height: auto;
+  }
 
-    }
-
-    .hero-bg {
-        height: auto;
-    }
-
-    .form-bg {
-        clip-path: none;
-    }
+  .form-bg {
+    clip-path: none;
+  }
 }
-
 
 .modal-open {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-
-.card-show>div {
-    display: none;
+.card-show > div {
+  display: none;
 }
 
-.card-show:hover>div {
-    display: block;
+.card-show:hover > div {
+  display: block;
 }
 
-.image-show:hover>span {
-    display: none;
+.image-show:hover > span {
+  display: none;
 }
 
-.image-show>span {
-    display: block;
+.image-show > span {
+  display: block;
 }
 
-
-.card-show2>div {
-    display: block;
-    animation-delay: .2s;
+.card-show2 > div {
+  display: block;
+  animation-delay: 0.2s;
 }
 
-.card-show2:hover>div {
-    display: none;
-    animation-delay: .2s;
+.card-show2:hover > div {
+  display: none;
+  animation-delay: 0.2s;
 }
 
-.image-show2:hover>span {
-    display: block;
-    animation-delay: .2s;
+.image-show2:hover > span {
+  display: block;
+  animation-delay: 0.2s;
 }
 
-.image-show2>span {
-    display: none;
-    animation-delay: .2s;
+.image-show2 > span {
+  display: none;
+  animation-delay: 0.2s;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
-    width: 1px;
+  width: 1px;
 }
-
 
 .blog-card:hover {
-    background-color: #F3F2FA;
+  background-color: #f3f2fa;
 }
 
-
-
 .navigation-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .dots {
-    display: flex;
-    padding: 10px 0;
-    justify-content: center;
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
 }
 
 .dot {
-    border: none;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    border: 1px solid #C5EEFB;
-    margin: 0 5px;
-    padding: 5px;
-    cursor: pointer;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid #c5eefb;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .dot:focus {
-    outline: none;
+  outline: none;
 }
 
 .dot.active {
-    background: #C5EEFB;
+  background: #c5eefb;
 }
 
 .arrow {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    fill: #fff;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
 }
 
 .arrow--left {
-    left: 5px;
+  left: 5px;
 }
 
 .arrow--right {
-    left: auto;
-    right: 5px;
+  left: auto;
+  right: 5px;
 }
 
 .arrow--disabled {
-    fill: rgba(255, 255, 255, 0.5);
+  fill: rgba(255, 255, 255, 0.5);
 }

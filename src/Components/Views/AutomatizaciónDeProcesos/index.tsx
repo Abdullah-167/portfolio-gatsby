@@ -1,12 +1,12 @@
-import React from 'react'
-import Hero from './Hero'
+import React from "react";
+import Hero from "./Hero";
 
 const AutomatizaciónDeProcesos = () => {
-    return (
-        <section>
-            <Hero />
-        </section>
-    )
-}
+  return (
+    <section>
+      <Hero />
+    </section>
+  );
+};
 
-export default AutomatizaciónDeProcesos
+export default AutomatizaciónDeProcesos;
