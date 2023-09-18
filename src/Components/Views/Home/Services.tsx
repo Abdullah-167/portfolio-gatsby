@@ -10,7 +10,7 @@ const Services = () => {
     const isHomePage = location.pathname === '/';
 
     return (
-        <section className={`sm:block hidden overflow-hidden z-[1000] ${isHomePage ? 'services-bg pb-48 -mt-7' : 'py-20'}`}>
+        <section className={`sm:block hidden overflow-hidden z-[1000] ${isHomePage ? 'services-bg pb-48 -mt-7' : 'py-20 min-h-screen'}`}>
             <div className='container'>
                 <h2 className={`text-[32px] font-bold pb-6 text-[#0E333F] ${isHomePage ? ' mt-20' : ''}`}>Servicios</h2>
                 <div className=' flex flex-wrap justify-center md:grid md:grid-cols-2 lg:grid-cols-3 gap-16 px-7'>

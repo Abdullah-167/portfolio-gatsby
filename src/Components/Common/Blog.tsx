@@ -12,7 +12,7 @@ const Blog = () => {
 
 
     return (
-        <div className={`px-5 opacity-100 z[1000]  ${isHomePage ? '-mt-16 lg:-mt-0 pb-14' : 'py-20'}`}>
+        <div className={`px-5 opacity-100 z[1000]  ${isHomePage ? '-mt-16 lg:-mt-0 pb-14' : 'py-20 min-h-screen'}`}>
             <div className="max-w-6xl mx-auto relative ">
                 <h2 className=" text-[32px] text-[#3D8095] font-bold pb-5">Blog</h2>
                 <div className=" pb-10">

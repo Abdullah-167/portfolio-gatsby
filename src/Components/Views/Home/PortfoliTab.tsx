@@ -18,7 +18,7 @@ const PortfoliTab = () => {
     }
 
     return (
-        <div className={`z-[100]  px-5  ${isHomePage ? ' py-28 sm:py-48 port-bg  ' : ' py-20'}`}>
+        <div className={`z-[100]  px-5  ${isHomePage ? ' py-28 sm:py-48 port-bg  ' : ' py-20 min-h-screen'}`}>
             <div className="max-w-6xl mx-auto relative ">
                 <h2 className={`text-[18px] sm:text-[32px]  font-bold pb-5 ${isHomePage ? 'text-[#3D8095]' : 'text-[#4E4B8B]'}`}>Portafolio</h2>
                 <div className="">

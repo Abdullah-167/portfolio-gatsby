@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <header className='py-10'>
+        <header className='py-10 min-h-screen'>
             <div className=' container'>
                 <h2 className='text-[#4E4B8B] 
 text-[18px] sm:text-[32px] font-bold'>Nosotros </h2>

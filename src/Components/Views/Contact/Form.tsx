@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <section className='pt-14 pb-40'>
+        <section className='pt-14 pb-40 min-h-screen'>
             <div className='container'>
                 <h2 className='text-[#CEA8CF] text-[32px] font-bold pb-5'>Contáctenos</h2>
                 <div className='max-w-[715px] mx-auto'>
