@@ -36,11 +36,9 @@ body {
 
 .custom_gradient {
   background: rgb(207, 234, 246);
-  background: linear-gradient(
-    180deg,
-    rgba(207, 234, 246, 1) 0%,
-    rgba(224, 211, 231, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(207, 234, 246, 1) 0%,
+      rgba(224, 211, 231, 1) 100%);
 }
 
 .form-bg {
@@ -83,38 +81,38 @@ body {
   overflow: hidden;
 }
 
-.card-show > div {
+.card-show>div {
   display: none;
 }
 
-.card-show:hover > div {
+.card-show:hover>div {
   display: block;
 }
 
-.image-show:hover > span {
+.image-show:hover>span {
   display: none;
 }
 
-.image-show > span {
+.image-show>span {
   display: block;
 }
 
-.card-show2 > div {
+.card-show2>div {
   display: block;
   animation-delay: 0.2s;
 }
 
-.card-show2:hover > div {
+.card-show2:hover>div {
   display: none;
   animation-delay: 0.2s;
 }
 
-.image-show2:hover > span {
+.image-show2:hover>span {
   display: block;
   animation-delay: 0.2s;
 }
 
-.image-show2 > span {
+.image-show2>span {
   display: none;
   animation-delay: 0.2s;
 }
@@ -178,4 +176,16 @@ body {
 
 .arrow--disabled {
   fill: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.card-hover:hover main {
+  display: none;
+}
+
+
+.service-hover:hover {
+  box-shadow: 2px 2px 12px 0px #C5EEFB;
+
 }
