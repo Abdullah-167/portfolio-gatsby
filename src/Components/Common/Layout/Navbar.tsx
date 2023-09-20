@@ -46,7 +46,6 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex gap-8 items-center">
           {links.map((item, index) => {
-
             return (
               <Link
                 to={item.url}
@@ -101,11 +100,18 @@ const Navbar = () => {
           <div className="flex flex-col gap-10 justify-start pl-10">
             {links.map((item, index) => {
               return (
-                <Link to={item.url}>
-                  <span
-                    key={index}
-                    className={`text-sm font-semibold cursor-pointer text-white transition-all hover:text-[#CEA8CF]`}
-                  >
+                <Link
+                  to={item.url}
+                  getProps={({ isPartiallyCurrent }) => {
+
+                    return {
+                      style: {
+                        color: isPartiallyCurrent ? "#CEA8CF" : "white",
+                      },
+                    };
+                  }}
+                >
+                  <span key={index} className="text-sm cursor-pointer">
                     {item.link}
                   </span>
                 </Link>
