@@ -117,11 +117,7 @@ const data = [
         className=" min-h-[404px] max-h-[404px]"
         width={400}
         height={404}
-<<<<<<< HEAD
-        src="../../../images/card1.png"
-=======
         src="../../../images/card-servicios.png"
->>>>>>> 1eea424 (commit done)
         alt={""}
       />
     ),
@@ -137,11 +133,7 @@ const data = [
         className=" min-h-[404px] max-h-[404px] object-cover"
         width={400}
         height={404}
-<<<<<<< HEAD
-        src="../../../images/card2.png"
-=======
         src="../../../images/card-servicios-2.png"
->>>>>>> 1eea424 (commit done)
         alt={""}
       />
     ),
@@ -158,11 +150,7 @@ const data = [
         className=" min-h-[404px] max-h-[404px] object-cover"
         width={400}
         height={404}
-<<<<<<< HEAD
-        src="../../../images/card3.png"
-=======
         src="../../../images/card-servicios-3.png"
->>>>>>> 1eea424 (commit done)
         alt={""}
       />
     ),
@@ -178,11 +166,7 @@ const data = [
         className="min-h-[404px] max-h-[404px] object-cover"
         width={400}
         height={404}
-<<<<<<< HEAD
-        src="../../../images/card4.png"
-=======
         src="../../../images/card-servicios-4.png"
->>>>>>> 1eea424 (commit done)
         alt={""}
       />
     ),
@@ -198,11 +182,7 @@ const data = [
         className="min-h-[404px] max-h-[404px] object-cover"
         width={400}
         height={404}
-<<<<<<< HEAD
-        src="../../../images/card5.png"
-=======
         src="../../../images/card-servicios-5.png"
->>>>>>> 1eea424 (commit done)
         alt={""}
       />
     ),
@@ -218,11 +198,7 @@ const data = [
         className="min-h-[404px] max-h-[404px] object-cover"
         width={400}
         height={404}
-<<<<<<< HEAD
-        src="../../../images/card6.png"
-=======
         src="../../../images/card-servicios-6.png"
->>>>>>> 1eea424 (commit done)
         alt={""}
       />
     ),

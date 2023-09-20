@@ -1,18 +1,10 @@
-<<<<<<< HEAD
-=======
 import { StaticImage } from "gatsby-plugin-image";
->>>>>>> 1eea424 (commit done)
 import React from "react";
 
 const Footer = () => {
   return (
-<<<<<<< HEAD
-    <footer className="bg-[#18154C] text-white  py-7">
-      <div className="flex sm:flex-row flex-col-reverse justify-between container items-center">
-=======
     <footer className="bg-[#18154C] text-white  py-7 overflow-hidden z-[1000]">
           <div className="flex sm:flex-row flex-col-reverse justify-between container items-center">
->>>>>>> 1eea424 (commit done)
         <span className="text-sm">Guatemala, 2023</span>
         <div className="flex gap-5 sm:pb-0 pb-6">
           {data.map((item, index) => {

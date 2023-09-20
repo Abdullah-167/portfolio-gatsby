@@ -1,19 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-<<<<<<< HEAD
-
-const Layout = ({ children }: any) => {
-  return (
-    <div>
-      <Navbar />
-      {children}
-      <Footer />
-    </div>
-  );
-};
-
-=======
 import { StaticImage } from "gatsby-plugin-image";
 import { useLocation } from "@reach/router";
 
@@ -35,5 +22,4 @@ const Layout = ({ children }: any) => {
   );
 };
 
->>>>>>> 1eea424 (commit done)
 export default Layout;

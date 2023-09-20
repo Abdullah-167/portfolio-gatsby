@@ -3,21 +3,12 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Form = () => {
   return (
-<<<<<<< HEAD
-    <section className="form-bg py-5 md:py-10">
-      <div className="flex flex-wrap md:flex-nowrap gap-40 items-center justify-between container">
-        <div>
-          <StaticImage
-            src={"../../../images/footer-logo.svg"}
-            className="min-h-[]"
-=======
     <section className=" form-bg py-5 md:py-10 md:px-0 px-5">
       <div className="max-w-[1000px] mx-auto flex flex-wrap md:flex-nowrap gap-40 items-center justify-between">
         <div>  
           <StaticImage
             src={"../../../images/footer-logo.svg"}
             className="md:block hidden"
->>>>>>> 1eea424 (commit done)
             alt="Logo"
             width={260}
             height={120}

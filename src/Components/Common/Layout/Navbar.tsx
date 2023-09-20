@@ -36,13 +36,8 @@ const Navbar = () => {
         <div>
           <Link to="/">
             <StaticImage
-<<<<<<< HEAD
-              src={"../../../images/logo.svg"}
-              className="sm:w-[143px] w-[65px] sm:h-[63px] h-[29px]"
-=======
               src={"../../../images/footer-logo.svg"}
               className=""
->>>>>>> 1eea424 (commit done)
               alt="Logo"
               width={143}
               height={63}
@@ -64,14 +59,8 @@ const Navbar = () => {
           })}
         </div>
         <div
-<<<<<<< HEAD
-          className={`md:hidden flex text-white cursor-pointer ${
-            toggelTab ? "text-3xl" : "text-4xl"
-          }`}
-=======
           className={`md:hidden flex text-white cursor-pointer ${toggelTab ? "text-3xl" : "text-4xl"
             }`}
->>>>>>> 1eea424 (commit done)
           onClick={() => handleMenu()}
         >
           <svg
@@ -89,17 +78,6 @@ const Navbar = () => {
         </div>
       </div>
       <div
-<<<<<<< HEAD
-        className={`w-full absolute h-full top-0 py-5 transition-all duration-700 shadow-md bg-[#18154C] z-[1000]  max-w-[300px] min-h-[300px] ${
-          toggelTab ? " -left-0 opacity-100 " : " opacity-0 -left-[800px]"
-        }`}
-        ref={dropdownRef}
-      >
-        <div
-          className={`flex justify-end pr-8 pt-8 text-white cursor-pointer mb-20 ${
-            toggelTab ? "text-3xl" : "text-4xl"
-          }`}
-=======
         className={`w-full absolute h-full top-0 py-5 transition-all duration-700 shadow-md bg-[#18154C] z-[1000]  max-w-[300px] min-h-[300px] ${toggelTab ? " -right-0 opacity-100 " : " opacity-0 -right-[800px]"
           }`}
         ref={dropdownRef}
@@ -107,7 +85,6 @@ const Navbar = () => {
         <div
           className={`flex justify-end pr-8 pt-8 text-white cursor-pointer mb-20 ${toggelTab ? "text-3xl" : "text-4xl"
             }`}
->>>>>>> 1eea424 (commit done)
           onClick={() => handleMenu()}
         >
           <RxCross1 />
