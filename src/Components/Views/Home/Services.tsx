@@ -29,7 +29,7 @@ const Services = () => {
               <div
                 className={`${
                   isHomePage
-                    ? "bg-[#C5EEFB] border border-[#C5EEFB] hover:border-[0px]"
+                    ? "bg-[#C5EEFB] hover:bg-transparent border hover:border-transparent border-[#C5EEFB] hover:border-[0px]"
                     : "bg-transparent sm:border sm:border-[#C5EEFB] border-[0px]"
                 } overflow-hidden cursor-pointer rounded relative group max-w-[340px]`}
                 key={index}
