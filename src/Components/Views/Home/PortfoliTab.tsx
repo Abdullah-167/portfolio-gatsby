@@ -89,7 +89,7 @@ const PortfoliTab = () => {
                                     </div>
                                   </div>
                                   <div className=""> {newitem.img} </div>
-                                  <div className="absolute left-2 top-2 inset-y-0 rounded  group-hover:bg-white max-w-[312px] max-h-[272px]">
+                                  <div className="absolute left-2 top-2 inset-y-0 rounded service-hover  group-hover:bg-white max-w-[312px] max-h-[272px]">
                                     <div className="transform-gpu p-4 items-center flex min-h-[400px] space-y-3 text-xl opacity-0 group-hover:opacity-100 group-hover:-translate-y-4 translate-y-0 pb-10 transition duration-300 ease-in-out">
                                       <div>
                                         <div className="font-bold text-[#A25FA5] text-center mb-8">
