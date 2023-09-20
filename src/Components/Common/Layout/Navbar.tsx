@@ -2,7 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React, { useEffect, useRef, useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { useLocation } from "@reach/router";
-import { Link } from "gatsby";
+import { Link, withPrefix } from "gatsby";
 import useClickOutside from "../../../hooks/useClickOutside";
 
 const Navbar = () => {
@@ -46,12 +46,20 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex gap-8 items-center">
           {links.map((item, index) => {
+
             return (
-              <Link to={item.url}>
-                <span
-                  key={index}
-                  className={`text-sm cursor-pointer text-white`}
-                >
+              <Link
+                to={item.url}
+                getProps={({ isPartiallyCurrent }) => {
+
+                  return {
+                    style: {
+                      color: isPartiallyCurrent ? "#CEA8CF" : "white",
+                    },
+                  };
+                }}
+              >
+                <span key={index} className="text-sm cursor-pointer">
                   {item.link}
                 </span>
               </Link>
