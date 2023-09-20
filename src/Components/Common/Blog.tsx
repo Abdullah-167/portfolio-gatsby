@@ -10,9 +10,8 @@ const Blog = () => {
 
   return (
     <div
-      className={`px-5 opacity-100 z[1000]  ${
-        isHomePage ? " pt-40 pb-14" : "py-20 min-h-screen"
-      }`}
+      className={`px-5 opacity-100 z[1000]  ${isHomePage ? " pt-40 pb-14" : "py-20 min-h-screen"
+        }`}
     >
       <div className="max-w-6xl mx-auto relative ">
         <h2 className="text-[32px] text-[#4E4B8B] font-bold mb-12">Blog</h2>
@@ -22,17 +21,15 @@ const Blog = () => {
               return (
                 <div key={index}>
                   <div
-                    className={`px-2 py-2 rounded cursor-pointer border-[1.5px] text-center  ${
-                      activeTab === item.id
+                    className={`px-2 py-2 rounded cursor-pointer border-[1.5px] text-center  ${activeTab === item.id
                         ? "bg-[#4E4B8B] border-[#4E4B8B]"
                         : " bg-transparent text-[#4E4B8B] border-[#4E4B8B]"
-                    }`}
+                      }`}
                     onClick={() => setActiveTab(item.id)}
                   >
                     <h1
-                      className={` whitespace-nowrap text-sm font-semibold ${
-                        activeTab === item.id ? "text-white" : "text-[#4E4B8B]"
-                      }`}
+                      className={` whitespace-nowrap text-sm font-semibold ${activeTab === item.id ? "text-white" : "text-[#4E4B8B]"
+                        }`}
                     >
                       {item.btnHeading}
                     </h1>
@@ -45,9 +42,8 @@ const Blog = () => {
             {DataA.map((item, index) => {
               return (
                 <div
-                  className={`transition-all duration-500 ${
-                    activeTab === item.id ? "opacity-100" : "opacity-0"
-                  }`}
+                  className={`transition-all duration-500 ${activeTab === item.id ? "opacity-100" : "opacity-0"
+                    }`}
                   key={index}
                 >
                   {activeTab === item.id && (
@@ -82,13 +78,14 @@ const Blog = () => {
             })}
           </div>
         </div>
-        <p
-          className={`text-[#A25FA5] text-[16px] font-semibold cursor-pointer underline ${
-            isHomePage ? "block" : "hidden"
-          }`}
-        >
-          Ver todos
-        </p>
+        <Link to="/blog">
+          <p
+            className={`text-[#A25FA5] text-[16px] font-semibold cursor-pointer underline ${isHomePage ? "block" : "hidden"
+              }`}
+          >
+            Ver todos
+          </p>
+        </Link>
       </div>
     </div>
   );
