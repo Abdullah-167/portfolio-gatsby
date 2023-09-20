@@ -8,7 +8,11 @@ const PortfoliTab = () => {
   const isHomePage = location.pathname === "/";
   const [activeTab, setActiveTab] = useState(DataA[0].id);
 
+<<<<<<< HEAD
   const [activeModalIndex, setActiveModalIndex] = useState(-1); // Initially, no modal is open
+=======
+  const [activeModalIndex, setActiveModalIndex] = useState(-1);
+>>>>>>> 1eea424 (commit done)
 
   const handelModale = (index: any) => {
     setActiveModalIndex(index);
@@ -20,18 +24,28 @@ const PortfoliTab = () => {
   });
   return (
     <div
+<<<<<<< HEAD
       className={`z-[100] relative px-5  ${
         isHomePage ? "py-28 sm:pb-80" : " py-20 min-h-screen"
       }`}
+=======
+      className={`z-[100] relative px-5  ${isHomePage ? "py-28 sm:pb-80" : " pt-20 min-h-screen"
+        }`}
+>>>>>>> 1eea424 (commit done)
     >
       {isHomePage && (
         <div className="custom_gradient absolute inset-0 skew-y-6 -top-28"></div>
       )}
       <div className="max-w-6xl mx-auto relative ">
         <h2
+<<<<<<< HEAD
           className={`text-[18px] sm:text-[32px]  font-bold mb-10 ${
             isHomePage ? "text-[#3D8095]" : "text-[#4E4B8B]"
           }`}
+=======
+          className={`text-[18px] sm:text-[32px]  font-bold mb-10 ${isHomePage ? "text-[#3D8095]" : "text-[#4E4B8B]"
+            }`}
+>>>>>>> 1eea424 (commit done)
         >
           Portafolio
         </h2>
@@ -41,6 +55,7 @@ const PortfoliTab = () => {
               return (
                 <div key={index}>
                   <div
+<<<<<<< HEAD
                     className={`px-2 py-2 rounded cursor-pointer border text-center  ${
                       activeTab === item.id
                         ? "bg-white border-white"
@@ -56,6 +71,21 @@ const PortfoliTab = () => {
                           ? "text-[#3D8095]"
                           : "text-[#3D8095]"
                       }`}
+=======
+                    className={`px-2 py-2 rounded cursor-pointer border text-center  ${activeTab === item.id
+                      ? "bg-white border-white"
+                      : isHomePage
+                        ? " bg-transparent text-black border-[#3D8095]"
+                        : " bg-transparent text-black  border-blue-500"
+                      }  `}
+                    onClick={() => setActiveTab(item.id)}
+                  >
+                    <h1
+                      className={`whitespace-nowrap text-sm ${activeTab === item.id
+                        ? "text-[#3D8095]"
+                        : "text-[#3D8095]"
+                        }`}
+>>>>>>> 1eea424 (commit done)
                     >
                       {item.btnHeading}
                     </h1>
@@ -69,9 +99,14 @@ const PortfoliTab = () => {
               return (
                 <div>
                   <div
+<<<<<<< HEAD
                     className={`transition-all duration-500 ${
                       activeTab === item.id ? "opacity-100" : "opacity-0"
                     }`}
+=======
+                    className={`transition-all duration-500 ${activeTab === item.id ? "opacity-100" : "opacity-0"
+                      }`}
+>>>>>>> 1eea424 (commit done)
                     key={index}
                   >
                     {activeTab === item.id && (
@@ -85,7 +120,11 @@ const PortfoliTab = () => {
                                 className="overflow-hidden cursor-pointer max-w-[332px] rounded relative group "
                                 onClick={() => handelModale(idx)}
                               >
+<<<<<<< HEAD
                                 <div className="relative">
+=======
+                                <div className="relative ">
+>>>>>>> 1eea424 (commit done)
                                   <div className="rounded-xl w-full block z-50 opacity-100 group-hover:opacity-0 transition duration-300 ease-in-out cursor-pointer absolute inset-x-0 -bottom-2 pt-30 text-white ">
                                     <div className="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-4 translate-y-0 pb-[28px] transition duration-300 ease-in-out text-center">
                                       <div className="font-bold text-2xl text-[#A25FA5]">
@@ -93,14 +132,22 @@ const PortfoliTab = () => {
                                       </div>
                                     </div>
                                   </div>
+<<<<<<< HEAD
                                   {newitem.img}
                                   <div className="absolute top-0 inset-y-0 group-hover:bg-white ">
+=======
+                                  <div className=""> {newitem.img} </div>
+                                  <div className="absolute left-2 top-2 inset-y-0 rounded  group-hover:bg-white max-w-[312px] max-h-[272px]">
+>>>>>>> 1eea424 (commit done)
                                     <div className="transform-gpu p-4 items-center flex min-h-[400px] space-y-3 text-xl opacity-0 group-hover:opacity-100 group-hover:-translate-y-4 translate-y-0 pb-10 transition duration-300 ease-in-out">
                                       <div>
                                         <div className="font-bold text-[#A25FA5] text-center mb-8">
                                           {newitem?.headingText}
                                         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1eea424 (commit done)
                                         <div className="opacity-60 text-[#646467] text-sm text-center">
                                           {newitem?.Para}
                                         </div>

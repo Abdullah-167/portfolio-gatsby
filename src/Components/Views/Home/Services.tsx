@@ -35,7 +35,11 @@ const Services = () => {
                 key={index}
               >
                 <Link to={item.link}>
+<<<<<<< HEAD
                   <div className="relative">
+=======
+                  <div className="relative max-w-[320px]">
+>>>>>>> 1eea424 (commit done)
                     <div className="transform-gpu p-4 items-center flex min-h-[400px] space-y-3 text-xl opacity-0 sm:opacity-100 group-hover:opacity-0 group-hover:-translate-y-4 translate-y-0 pb-10 transition duration-300 ease-in-out">
                       <div>
                         <div className="font-bold text-center mb-4">
@@ -47,7 +51,11 @@ const Services = () => {
                         </div>
                       </div>
                     </div>
+<<<<<<< HEAD
                     <div className="absolute top-0 inset-y-0 ">
+=======
+                    <div className="absolute top-0 left-0 inset-y-0 ">
+>>>>>>> 1eea424 (commit done)
                       <div className="rounded-xl z-50 opacity-100 sm:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute sm:from-black/80 to-transparent bg-gradient-to-t inset-x-0 bottom-4 sm:-bottom-2 pt-30 text-white flex items-end">
                         <div>
                           <div
@@ -81,7 +89,11 @@ const data = [
     link: "/consultoría-y-asesoría",
     img: (
       <StaticImage
+<<<<<<< HEAD
         className="object-cover h-full  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+=======
+        className="object-cover h-full min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+>>>>>>> 1eea424 (commit done)
         src="../../../images/card-servicios.png"
         alt={""}
       />
@@ -95,7 +107,11 @@ const data = [
     link: "/desarrollo-de-software",
     img: (
       <StaticImage
+<<<<<<< HEAD
         className="object-cover h-full  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+=======
+        className="object-cover h-full min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+>>>>>>> 1eea424 (commit done)
         src="../../../images/card-servicios-2.png"
         alt={""}
       />
@@ -110,7 +126,11 @@ const data = [
     link: "/automatización-de-procesos",
     img: (
       <StaticImage
+<<<<<<< HEAD
         className="object-cover h-full  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+=======
+        className="object-cover h-full min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+>>>>>>> 1eea424 (commit done)
         src="../../../images/card-servicios-3.png"
         alt={""}
       />
@@ -124,7 +144,11 @@ const data = [
     link: "/cloud-computing",
     img: (
       <StaticImage
+<<<<<<< HEAD
         className="object-cover h-full  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+=======
+        className="object-cover h-full min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+>>>>>>> 1eea424 (commit done)
         src="../../../images/card-servicios-4.png"
         alt={""}
       />
@@ -138,7 +162,11 @@ const data = [
     link: "/ciencia-de-datos",
     img: (
       <StaticImage
+<<<<<<< HEAD
         className="object-cover h-full  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+=======
+        className="object-cover h-full min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+>>>>>>> 1eea424 (commit done)
         src="../../../images/card-servicios-5.png"
         alt={""}
       />
@@ -152,7 +180,11 @@ const data = [
     link: "/servicios-gestionados",
     img: (
       <StaticImage
+<<<<<<< HEAD
         className="object-cover h-full  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+=======
+        className="object-cover h-full min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+>>>>>>> 1eea424 (commit done)
         src="../../../images/card-servicios-6.png"
         alt={""}
       />
