@@ -5,7 +5,7 @@ const Form = () => {
   return (
     <section className=" form-bg py-5 md:py-10 md:px-0 px-5">
       <div className="max-w-[1000px] mx-auto flex flex-wrap md:flex-nowrap gap-40 items-center justify-between">
-        <div>  
+        <div className="md:block hidden">  
           <StaticImage
             src={"../../../images/footer-logo.svg"}
             className="md:block hidden"
