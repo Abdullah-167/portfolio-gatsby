@@ -14,6 +14,7 @@ const Form = () => {
             height={120}
           />
         </div>
+        <div></div>
         <div className="-mt-40 md:-mt-0">
           <h2 className="text-[#CEA8CF] text-[32px] font-bold pb-5">
             Contáctenos
