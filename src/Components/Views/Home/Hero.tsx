@@ -4,7 +4,7 @@ import Navbar from "../../Common/Layout/Navbar";
 const Hero = () => {
   return (
     <header className="hero_bg lg:min-h-[768px]">
-      <div className="pb-10 md:pb-32">
+      <div className="pb-3 md:pb-32">
         <Navbar />
       </div>
       <div className="pb-20">
