@@ -15,18 +15,18 @@ const Services = () => {
     >
       <div className="container">
         <h2
-          className={`text-[32px] font-bold pb-6 text-[#4E4B8B] ${isHomePage ? " mt-20" : ""
+          className={` text-[18px] sm:text-[32px] font-bold pb-6 text-[#4E4B8B] ${isHomePage ? " mt-20" : ""
             }`}
         >
           Servicios
         </h2>
-        <div className="flex flex-wrap justify-center md:grid md:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-12 lg:gap-16">
+        <div className=" hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-8 md:gap-12 lg:gap-16">
           {data.map((item, index) => {
             return (
               <div
                 className={`${isHomePage
-                    ? "sm:bg-[#C5EEFB] sm:service-hover hover:bg-transparent border hover:border-transparent border-[#C5EEFB] hover:border-[0px]"
-                    : "service-hover hover:bg-transparent sm:border hover:border-transparent sm:border-[#C5EEFB] hover:border-[0px] mb-5"
+                  ? "sm:bg-[#C5EEFB] sm:service-hover hover:bg-transparent border hover:border-transparent border-[#C5EEFB] hover:border-[0px]"
+                  : "service-hover hover:bg-transparent sm:border hover:border-transparent sm:border-[#C5EEFB] hover:border-[0px] mb-5"
                   }  overflow-hidden cursor-pointer rounded relative group sm:max-w-[340px]`}
                 key={index}
               >
@@ -43,7 +43,7 @@ const Services = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="absolute top-0 left-0 inset-y-0 ">
+                    <div className="absolute top-0 left-0 inset-y-0 max-w-[350px]">
                       <div className="rounded-xl z-50 opacity-100 sm:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute sm:from-black/80 to-transparent bg-gradient-to-t inset-x-0 bottom-4 sm:-bottom-2 pt-30 text-white flex items-end">
                         <div>
                           <div
@@ -62,6 +62,22 @@ const Services = () => {
             );
           })}
         </div>
+        <div className=" flex sm:hidden justify-center flex-wrap">
+          {data.map((item, index) => {
+            return (
+              <Link to={item.link} key={index}>
+                <div className=" relative service-hover max-w-[350px] cursor-pointer mb-3">
+                  <div className="rounded-xl z-50 opacity-100 sm:opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute sm:from-black/80 to-transparent bg-gradient-to-t inset-x-0 bottom-4 sm:-bottom-2 pt-30 text-white flex items-end">
+                    <div>
+                      <div className=" text-xl bottom-4 left-5 absolute inset-x-0 font-bold">{item.imgText}</div>
+                    </div>
+                  </div>
+                  {item.img}
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
@@ -76,7 +92,7 @@ const data = [
     link: "/consultoría-y-asesoría",
     img: (
       <StaticImage
-        className="object-cover h-full sm:min-w-[350px] min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
+        className="object-cover h-full max-w-[350px] min-w-[350px] sm:min-w-[344px] w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
         src="../../../images/card-servicios.png"
         alt={""}
       />
@@ -90,7 +106,7 @@ const data = [
     link: "/desarrollo-de-software",
     img: (
       <StaticImage
-        className="object-cover h-full min-w-[350px] sm:min-w-[344px] w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
+        className="object-cover h-full max-w-[350px] min-w-[350px] sm:min-w-[344px] w-full opacity-100 sm:opacity-0 group-hover:opacity-100 sm:group-hover:scale-110 transition duration-300 ease-in-out"
         src="../../../images/card-servicios-2.png"
         alt={""}
       />
@@ -105,7 +121,7 @@ const data = [
     link: "/automatización-de-procesos",
     img: (
       <StaticImage
-        className="object-cover h-full sm:min-w-[350px] min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
+        className="object-cover h-full max-w-[350px] min-w-[350px] sm:min-w-[344px] w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
         src="../../../images/card-servicios-3.png"
         alt={""}
       />
@@ -119,7 +135,7 @@ const data = [
     link: "/cloud-computing",
     img: (
       <StaticImage
-        className="object-cover h-full sm:min-w-[350px] min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
+        className="object-cover h-full max-w-[350px] min-w-[350px] sm:min-w-[344px] w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
         src="../../../images/card-servicios-4.png"
         alt={""}
       />
@@ -133,7 +149,7 @@ const data = [
     link: "/ciencia-de-datos",
     img: (
       <StaticImage
-        className="object-cover h-full sm:min-w-[350px] min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
+        className="object-cover h-full max-w-[350px] min-w-[350px] sm:min-w-[344px] w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
         src="../../../images/card-servicios-5.png"
         alt={""}
       />
@@ -147,7 +163,7 @@ const data = [
     link: "/servicios-gestionados",
     img: (
       <StaticImage
-        className="object-cover h-full sm:min-w-[350px] min-w-[344px]  w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
+        className="object-cover h-full max-w-[350px] min-w-[350px] sm:min-w-[344px] w-full opacity-100 sm:opacity-0 group-hover:opacity-100 rounded sm:group-hover:scale-110 transition duration-300 ease-in-out"
         src="../../../images/card-servicios-6.png"
         alt={""}
       />
