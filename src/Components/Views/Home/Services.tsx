@@ -36,7 +36,7 @@ const Services = () => {
               >
                 <Link to={item.link}>
                   <div className="relative max-w-[320px]">
-                    <div className="transform-gpu p-4 items-center flex min-h-[400px] space-y-3 text-xl opacity-0 sm:opacity-100 group-hover:opacity-0 group-hover:-translate-y-4 translate-y-0 pb-10 transition duration-300 ease-in-out">
+                    <div className=" transform-gpu p-4 items-center flex min-h-[400px] space-y-3 text-xl opacity-0 sm:opacity-100 group-hover:opacity-0 group-hover:-translate-y-4 translate-y-0 pb-10 transition duration-300 ease-in-out">
                       <div>
                         <div className="font-bold text-center mb-4">
                           {item?.heading}

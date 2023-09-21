@@ -37,7 +37,7 @@ const Navbar = () => {
           <Link to="/">
             <StaticImage
               src={"../../../images/footer-logo.svg"}
-              className=""
+              className="sm:max-w-[143px] max-w-[85px] sm:max-h-[75px] max-h-[42px]"
               alt="Logo"
               width={143}
               height={63}
